@@ -1,104 +1,133 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>상담 신청 — 가르침에듀 코딩학원</title>
-<meta name="description" content="레벨 테스트와 학부모 상담 신청.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상담 신청 — 가르침에듀 코딩학원</title>
+  <meta name="description" content="레벨 테스트와 학부모 상담 신청.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
 
-<div data-header></div>
+  <div data-header></div>
 
-<main>
+  <main>
 
-<section class="page-header">
-  <div class="page-eyebrow rise rise-1">07 / 상담 신청</div>
-  <h1 class="page-title rise rise-2">
-    먼저, 아이의<br>
-    <em>시작점</em>을 찾아봅시다.
-  </h1>
-  <p class="page-lead rise rise-3">
-    레벨 테스트와 학부모 상담이 함께 진행됩니다.
-    결과 리포트와 로드맵을 서면으로 안내해 드립니다. 
-  </p>
-</section>
-
-<div class="contact-wrap">
-  <div class="contact-grid">
-    <div class="info-box">
-      <h3>학원 정보</h3>
-      <div class="info-item"><div class="info-k">학원명</div><div class="info-v">가르침에듀 코딩학원</div></div>
-      <div class="info-item"><div class="info-k">대표 강사</div><div class="info-v">이진영 · <a href="instructor.html">프로필 보기 →</a></div></div>
-      <div class="info-item"><div class="info-k">문의 전화</div><div class="info-v"><a href="tel:050714480134">0507-1448-0134</a></div></div>
-      <div class="info-item"><div class="info-k">Address</div><div class="info-v">[ 학원 주소 — 개원 확정 시 갱신 ]</div></div>
-
-      <!-- 학원 위치 지도 카드 -->
-      <a href="https://naver.me/xXnPwKSy" target="_blank" rel="noopener" class="map-card-mini" style="display: block; margin-top: 24px; padding: 16px; background: var(--bg-alt); border-radius: 8px; text-decoration: none; color: inherit; border: 1px solid var(--border);">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <div style="color: var(--accent);">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-          </div>
-          <div>
-            <div style="font-weight: 600; font-size: 14px;">네이버 지도에서 보기</div>
-            <div style="font-size: 12px; color: var(--muted);">위치 · 주변 환경 · 교통편 확인 ↗</div>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="form-box">
-      <h3>상담 신청서</h3>
-      <form onsubmit="handleSubmit(event)">
-        <div class="form-field"><label>학생 이름</label><input type="text" name="student" required placeholder="홍길동"></div>
-        <div class="form-field">
-          <label>학년</label>
-          <select name="grade" required>
-            <option value="">선택</option>
-            <option>초등 1학년</option><option>초등 2학년</option><option>초등 3학년</option>
-            <option>초등 4학년</option><option>초등 5학년</option><option>초등 6학년</option>
-            <option>중학 1학년</option><option>중학 2학년</option><option>중학 3학년</option>
-            <option>고등 1학년</option><option>고등 2학년</option>
-          </select>
-        </div>
-        <div class="form-field"><label>보호자 이름</label><input type="text" name="parent" required></div>
-        <div class="form-field"><label>연락처</label><input type="tel" name="phone" required placeholder="010-0000-0000"></div>
-        <div class="form-field">
-          <label>관심 과정</label>
-          <select name="interest">
-            <option value="">선택 (선택 안 해도 됨)</option>
-            <option>L1 CT 입문 (초1~초3)</option>
-            <option>L2 창작 (초3~초5)</option>
-            <option>L3 전환 (초5~중1)</option>
-            <option>L4 교과·응용 (중1~중3)</option>
-            <option>L5 입시 심화 (중3~고2)</option>
-            <option>어느 레벨인지 모르겠음</option>
-          </select>
-        </div>
-        <div class="form-field"><label>희망 상담 시간대</label><input type="text" name="time" placeholder="예: 평일 저녁 7시 이후 / 토요일 오전"></div>
-        <div class="form-field"><label>남기실 말씀 (선택)</label><textarea name="note" placeholder="아이의 코딩 경험, 궁금한 점, 목표 등"></textarea></div>
-        <button type="submit" class="submit-btn">상담 신청하기</button>
-      </form>
-      <p style="font-size: 12px; color: var(--muted); margin-top: 16px; line-height: 1.6;">
-        신청 후 영업일 기준 1일 이내에 전화로 연락드립니다.<br>
-        급하신 경우 <a href="tel:050714480134" style="color: var(--accent);">0507-1448-0134</a> 로 직접 전화 주세요.
+    <section class="page-header">
+      <div class="page-eyebrow rise rise-1">07 / 상담 신청</div>
+      <h1 class="page-title rise rise-2">
+        먼저, 아이의<br>
+        <em>시작점</em>을 찾아봅시다.
+      </h1>
+      <p class="page-lead rise rise-3">
+        레벨 테스트와 학부모 상담이 함께 진행됩니다.
+        결과 리포트와 로드맵을 서면으로 안내해 드립니다.
       </p>
-    </div>
-  </div>
-</div>
+    </section>
 
-<!--
+    <div class="contact-wrap">
+      <div class="contact-grid">
+        <div class="info-box">
+          <h3>학원 정보</h3>
+          <div class="info-item">
+            <div class="info-k">학원명</div>
+            <div class="info-v">가르침에듀 코딩학원</div>
+          </div>
+          <div class="info-item">
+            <div class="info-k">대표 강사</div>
+            <div class="info-v">이진영 · <a href="instructor.html">프로필 보기 →</a></div>
+          </div>
+          <div class="info-item">
+            <div class="info-k">문의 전화</div>
+            <div class="info-v"><a href="tel:0649009982">064-900-9982</a></div>
+          </div>
+          <div class="info-item">
+            <div class="info-k">Address</div>
+            <div class="info-v">[ 학원 주소 — 개원 확정 시 갱신 ]</div>
+          </div>
+
+          <!-- 학원 위치 지도 카드 -->
+          <a href="https://naver.me/xXnPwKSy" target="_blank" rel="noopener" class="map-card-mini"
+            style="display: block; margin-top: 24px; padding: 16px; background: var(--bg-alt); border-radius: 8px; text-decoration: none; color: inherit; border: 1px solid var(--border);">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="color: var(--accent);">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div style="font-weight: 600; font-size: 14px;">네이버 지도에서 보기</div>
+                <div style="font-size: 12px; color: var(--muted);">위치 · 주변 환경 · 교통편 확인 ↗</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="form-box">
+          <h3>상담 신청서</h3>
+          <form onsubmit="handleSubmit(event)">
+            <div class="form-field"><label>학생 이름</label><input type="text" name="student" required placeholder="홍길동">
+            </div>
+            <div class="form-field">
+              <label>학년</label>
+              <select name="grade" required>
+                <option value="">선택</option>
+                <option>초등 1학년</option>
+                <option>초등 2학년</option>
+                <option>초등 3학년</option>
+                <option>초등 4학년</option>
+                <option>초등 5학년</option>
+                <option>초등 6학년</option>
+                <option>중학 1학년</option>
+                <option>중학 2학년</option>
+                <option>중학 3학년</option>
+                <option>고등 1학년</option>
+                <option>고등 2학년</option>
+              </select>
+            </div>
+            <div class="form-field"><label>보호자 이름</label><input type="text" name="parent" required></div>
+            <div class="form-field"><label>연락처</label><input type="tel" name="phone" required
+                placeholder="010-0000-0000"></div>
+            <div class="form-field">
+              <label>관심 과정</label>
+              <select name="interest">
+                <option value="">선택 (선택 안 해도 됨)</option>
+                <option>L1 CT 입문 (초1~초3)</option>
+                <option>L2 창작 (초3~초5)</option>
+                <option>L3 전환 (초5~중1)</option>
+                <option>L4 교과·응용 (중1~중3)</option>
+                <option>L5 입시 심화 (중3~고2)</option>
+                <option>어느 레벨인지 모르겠음</option>
+              </select>
+            </div>
+            <div class="form-field"><label>희망 상담 시간대</label><input type="text" name="time"
+                placeholder="예: 평일 저녁 7시 이후 / 토요일 오전"></div>
+            <div class="form-field"><label>남기실 말씀 (선택)</label><textarea name="note"
+                placeholder="아이의 코딩 경험, 궁금한 점, 목표 등"></textarea></div>
+            <button type="submit" class="submit-btn">상담 신청하기</button>
+          </form>
+          <p style="font-size: 12px; color: var(--muted); margin-top: 16px; line-height: 1.6;">
+            신청 후 영업일 기준 1일 이내에 전화로 연락드립니다.<br>
+            급하신 경우 <a href="tel:0649009982" style="color: var(--accent);">064-900-9982</a> 로 직접 전화 주세요.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--
   학원 위치 섹션 (임시 숨김 - 상단 info-box로 이동)
   필요 시 주석 해제하여 다시 사용 가능
 -->
-<!--
+    <!--
 <section class="map-wrap">
   <div class="section-inner">
     <div class="section-head">
@@ -138,47 +167,68 @@
 </section>
 -->
 
-<section class="process">
-  <div class="section-inner">
-    <div class="section-head">
-      <div><div class="section-num" style="color: var(--accent-soft);">상담 프로세스</div></div>
-      <div><h2 class="section-title" style="color: var(--paper);">신청부터 수업 시작까지.</h2></div>
-    </div>
+    <section class="process">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <div class="section-num" style="color: var(--accent-soft);">상담 프로세스</div>
+          </div>
+          <div>
+            <h2 class="section-title" style="color: var(--paper);">신청부터 수업 시작까지.</h2>
+          </div>
+        </div>
 
-    <div class="process-grid">
-      <div class="process-step"><div class="process-num">01.</div><h4>상담 신청</h4><p>이 페이지의 신청서 또는 전화로 접수.</p></div>
-      <div class="process-step"><div class="process-num">02.</div><h4>일정 확정</h4><p>영업일 1일 이내 연락드려 방문 일정 확정.</p></div>
-      <div class="process-step"><div class="process-num">03.</div><h4>레벨 테스트<br>+ 학부모 상담</h4><p>학생 테스트와 학부모 상담을 동시에 진행하고, 결과 리포트를 전달합니다.</p></div>
-      <div class="process-step"><div class="process-num">04.</div><h4>반 배치 · 수업 시작</h4><p>결과에 맞는 레벨의 반에 합류. 첫 수업부터 정규 커리큘럼.</p></div>
-    </div>
-  </div>
-</section>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-num">01.</div>
+            <h4>상담 신청</h4>
+            <p>이 페이지의 신청서 또는 전화로 접수.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">02.</div>
+            <h4>일정 확정</h4>
+            <p>영업일 1일 이내 연락드려 방문 일정 확정.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">03.</div>
+            <h4>레벨 테스트<br>+ 학부모 상담</h4>
+            <p>학생 테스트와 학부모 상담을 동시에 진행하고, 결과 리포트를 전달합니다.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">04.</div>
+            <h4>반 배치 · 수업 시작</h4>
+            <p>결과에 맞는 레벨의 반에 합류. 첫 수업부터 정규 커리큘럼.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script>
-function handleSubmit(e) {
-  e.preventDefault();
-  /*
-    ==============================================================================
-    실제 작동시키려면 이 함수를 아래 둘 중 하나로 교체하세요:
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
+        /*
+          ==============================================================================
+          실제 작동시키려면 이 함수를 아래 둘 중 하나로 교체하세요:
+      
+          1) Formspree 연동:
+             <form> 태그를 다음으로 교체:
+               <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+             그리고 이 handleSubmit 함수는 통째로 삭제.
+             (자세한 방법은 README.md 참고)
+      
+          2) 외부 링크로 이동 (구글 폼 등):
+             window.location.href = 'https://docs.google.com/forms/...';
+          ==============================================================================
+        */
+        alert('상담 신청이 접수되었습니다.\n\n아직 폼 연동이 설정되지 않은 데모 상태입니다.\n실제 운영 시에는 문의 전화(064-900-9982)로 연락 주세요.');
+      }
+    </script>
 
-    1) Formspree 연동:
-       <form> 태그를 다음으로 교체:
-         <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-       그리고 이 handleSubmit 함수는 통째로 삭제.
-       (자세한 방법은 README.md 참고)
+  </main>
 
-    2) 외부 링크로 이동 (구글 폼 등):
-       window.location.href = 'https://docs.google.com/forms/...';
-    ==============================================================================
-  */
-  alert('상담 신청이 접수되었습니다.\n\n아직 폼 연동이 설정되지 않은 데모 상태입니다.\n실제 운영 시에는 문의 전화(0507-1448-0134)로 연락 주세요.');
-}
-</script>
+  <div data-footer></div>
 
-</main>
-
-<div data-footer></div>
-
-<script src="assets/script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
+
 </html>

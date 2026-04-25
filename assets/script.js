@@ -7,11 +7,11 @@
 
 (function () {
   const NAV_ITEMS = [
-    { href: 'about.html',       label: '철학' },
-    { href: 'roadmap.html',     label: '로드맵' },
-    { href: 'levels.html',      label: '레벨별 과정' },
-    { href: 'instructor.html',  label: '대표 강사' },
-    { href: 'schedule.html',    label: '수업 안내' },
+    { href: 'about.html', label: '철학' },
+    { href: 'roadmap.html', label: '로드맵' },
+    { href: 'levels.html', label: '레벨별 과정' },
+    { href: 'instructor.html', label: '대표 강사' },
+    { href: 'schedule.html', label: '수업 안내' },
     // { href: 'faq.html',         label: 'FAQ' },  // 임시 숨김
     // { href: 'contact.html',     label: '레벨 테스트 신청', cta: true },  // 임시 숨김
   ];
@@ -90,7 +90,7 @@
         </div>
         <div class="footer-bottom">
           <div>© 가르침에듀 코딩학원</div>
-          <div>원장 박수연 · 문의 0507-1448-0134</div>
+          <div>원장 박수연 · 문의 064-900-9982</div>
         </div>
       </footer>
     `;

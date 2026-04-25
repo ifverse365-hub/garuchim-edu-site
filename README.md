@@ -135,7 +135,7 @@
 ## 📝 페이지 내용 자주 수정하는 부분
 
 ### 문의 전화번호 (전 페이지)
-- `assets/script.js` 의 footer 안쪽 `0507-1448-0134`
+- `assets/script.js` 의 footer 안쪽 `064-900-9982`
 - `contact.html` 의 info-box 안쪽 전화번호 2곳
 
 ### 학원 주소
